@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	android:versionName="9.4.0" package="com.vodafone.android.navigation"
+	android:versionCode="134">
+	<application android:label="@string/qtn_andr_applic_name_txt"
+		android:icon="@drawable/application_icon" android:name="NavigatorApplication"
+		android:theme="@style/theme_custom" android:debuggable="false">
+
+		<!-- Splash activity, main entry point in application -->
+		<activity android:name=".activity.SplashActivity"
+			android:label="@string/qtn_andr_applic_name_txt">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<data android:mimeType="vnd.android.cursor.item/vnd.wayfinder.places" />
+			</intent-filter>
+		</activity>
+
+		<!-- Route activities -->
+		<activity android:name=".activity.RouteActivity"></activity>
+		<activity android:name=".activity.RouteOverviewActivity"></activity>
+
+		<!-- Other activities -->
+		<activity android:name=".activity.SearchActivity"></activity>
+		<activity android:name=".activity.SearchResultsActivity"></activity>
+		<activity android:name=".activity.SettingsActivity"></activity>
+		<activity android:name=".activity.SettingsGeneralActivity"></activity>
+		<activity android:name=".activity.SettingsRouteActivity"></activity>
+		<activity android:name=".activity.SettingsMapActivity"></activity>
+		<activity android:name=".activity.SettingsDebugActivity"></activity>
+		<activity android:name=".activity.HelpActivity"></activity>
+		<activity android:name=".activity.ManagePlacesActivity"></activity>
+		<activity android:name=".activity.PlacesActivity"></activity>
+		<activity android:name=".activity.ServiceWindowActivity"></activity>
+		<activity android:name=".activity.CategorySelectionActivity"
+			android:label="@string/qtn_andr_select_cat_txt">></activity>
+		<activity android:name=".activity.CountrySelectionActivity"
+			android:label="@string/qtn_andr_select_country_txt"></activity>
+		<activity android:name=".activity.PreviousSearchesActivity"
+			android:label="@string/qtn_andr_prev_searches_tk"></activity>
+		<activity android:name=".activity.PlaceDetailsActivity"
+			android:label="@string/qtn_andr_view_details_txt"></activity>
+		<activity android:name=".activity.ServicesActivity"
+			android:label="@string/qtn_andr_applic_name_txt" android:launchMode="singleInstance"></activity>
+
+		<!-- Dialogs -->
+		<activity android:name=".activity.AboutActivity"
+			android:theme="@style/style_dialog"></activity>
+		<activity android:name=".activity.CancelRouteActivity"
+			android:theme="@style/style_dialog" android:launchMode="singleInstance"></activity>
+		<activity android:name=".activity.EditPlaceActivity"
+			android:theme="@style/style_dialog" android:label="@string/qtn_andr_add_to_m_places_tk"></activity>
+		<activity android:name=".activity.ChooseMapObjectActivity"
+			android:theme="@style/style_dialog"></activity>
+		<activity android:name=".activity.ContextActivity"
+			android:theme="@style/style_dialog"></activity>
+		<activity android:name=".activity.TransportActivity"
+			android:theme="@style/style_dialog"></activity>
+		<activity android:name=".activity.SMSActivity" android:theme="@style/style_dialog"></activity>
+		<activity android:name=".activity.PlanRouteActivity"
+			android:theme="@style/style_dialog"></activity>
+
+		<!-- Services -->
+		<service android:name=".service.RouteService"></service>
+
+		<!-- Widgets -->
+		<receiver android:name=".widget.GuideWidget" android:label="@string/qtn_andr_applic_name_txt">
+			<intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+				<action android:name="com.wayfinder.android.ROUTE" />
+			</intent-filter>
+			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/guide_widget" />
+		</receiver>
+
+		<!-- Live folders -->
+		<activity android:name=".activity.LiveFolderPlacesActivity"
+			android:label="@string/qtn_andr_my_places_txt">
+			<intent-filter>
+				<action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Content providers -->
+		<provider android:name=".contentprovider.ContentProviderPlaces"
+			android:authorities="com.vodafone.android.navigation.places"
+			android:multiprocess="true"></provider>
+
+
+	</application>
+
+	<!--
+		Use this to run on older firmwares that still uses 1.5 of Android
+		<uses-sdk android:minSdkVersion="3" />
+	-->
+
+	<!-- Use this for the Click-device which runs version 1.6 Android -->
+	<uses-sdk android:minSdkVersion="3" />
+	<uses-sdk android:maxSdkVersion="7"/>
+	
+	<supports-screens android:smallScreens="true"
+		android:anyDensity="true" android:normalScreens="true"
+		android:largeScreens="true" />
+	<!-- -->
+
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"></uses-permission>
+	<uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+</manifest> 

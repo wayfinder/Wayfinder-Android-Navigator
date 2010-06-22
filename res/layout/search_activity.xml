@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<RelativeLayout android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/bottomLayout"
+	android:layout_height="fill_parent">
+	<com.vodafone.android.navigation.view.WayfinderMapView
+		android:id="@+id/map" android:layout_width="wrap_content"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true" android:layout_height="wrap_content">
+	</com.vodafone.android.navigation.view.WayfinderMapView>
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:clickable="true"
+		android:id="@+id/content" android:background="@color/color_blue_dark"
+		android:paddingTop="2dip" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:focusable="true" android:id="@+id/layout_focus_holder"
+			android:focusableInTouchMode="true" android:layout_height="wrap_content">
+		</LinearLayout>
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<LinearLayout android:layout_height="wrap_content"
+					android:orientation="vertical" android:layout_weight="6"
+					android:layout_width="wrap_content">
+					<EditText android:text="" android:id="@+id/edittext_search"
+						android:lines="1" android:nextFocusUp="@+id/layout_focus_holder"
+						android:layout_width="fill_parent" android:background="@drawable/background_edit_text"
+						android:paddingLeft="10dip"
+						android:layout_height="fill_parent" android:gravity="center_vertical"
+						android:layout_gravity="center_vertical" android:paddingRight="10dip"
+						android:paddingBottom="6dip" android:paddingTop="6dip"
+						android:textAppearance="@style/title_black_big" android:hint="@string/qtn_andr_tap_2_enter_search_txt"
+						android:selectAllOnFocus="true" android:imeOptions="actionSearch"
+						android:singleLine="true" android:maxLines="1" android:inputType="text" android:cursorVisible="true" android:focusable="true" 
+						android:focusableInTouchMode="true" android:completionThreshold="1"></EditText>
+					<Button android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:gravity="left|center_vertical"
+						android:id="@+id/select_cateory" android:text="@string/qtn_andr_no_categories_tk"
+						android:nextFocusUp="@+id/edittext_search" android:imeOptions="normal"
+						android:background="@drawable/background_button" android:padding="10dip"
+						android:visibility="visible"></Button>
+					<CheckBox android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:background="@drawable/background_text_view"
+						android:drawableLeft="@drawable/btn_check" android:id="@+id/chkbox_search_around_me"
+						android:button="@null" android:textAppearance="@style/label_text_black_big"
+						android:text="@string/qtn_andr_search_around_me_txt" android:paddingLeft="5dip" android:paddingRight="3dip" android:drawablePadding="4dip"></CheckBox>
+					<AutoCompleteTextView android:text="" android:id="@+id/edittext_city"
+						android:layout_weight="6" android:gravity="center_vertical"
+						android:maxLines="1" android:layout_width="fill_parent"
+						android:imeOptions="actionDone|flagNoExtractUi|flagNoAccessoryAction"
+						android:hint="@string/qtn_andr_city_postcode_txt"
+						android:background="@drawable/background_edit_text" android:lines="1"
+						android:paddingBottom="6dip" android:paddingLeft="10dip"
+						android:paddingRight="10dip" android:paddingTop="6dip"
+						android:textAppearance="@style/title_black_big"
+						android:selectAllOnFocus="true" android:layout_height="fill_parent"
+						android:visibility="visible" android:inputType="text|textAutoComplete" android:completionThreshold="1"></AutoCompleteTextView>
+					<Button android:layout_height="wrap_content"
+						android:layout_width="fill_parent" android:gravity="left|center_vertical"
+						android:id="@+id/select_country" android:text="@string/qtn_andr_select_country_txt"
+						android:background="@drawable/background_button" android:padding="10dip"
+						android:visibility="visible"></Button>
+				</LinearLayout>
+				<LinearLayout android:layout_width="wrap_content"
+					android:layout_height="fill_parent" android:orientation="vertical"
+					android:gravity="center_horizontal">
+					<ImageButton android:id="@+id/search_button"
+						android:layout_height="fill_parent" android:background="@drawable/background_button"
+						android:scaleType="fitCenter" android:padding="10dip"
+						android:src="@drawable/btn_search" android:layout_width="fill_parent"
+						android:visibility="visible" android:layout_weight="1"></ImageButton>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</RelativeLayout>

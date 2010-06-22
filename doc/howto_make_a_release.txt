@@ -1,0 +1,12 @@
+
+To make a release:
+* Check out the latest code
+* to turn off debugging:
+	# set NavigatorApplication.DEBUG_ENABLED = false
+	# change Debuggable to false in AndroidNavigator.xml
+	# replace core-debug with core-release in lib-folder.
+* Set supported screens in the manifest
+* Update core/pal libs if required 
+* update the version in the manifest (Both version-name and version-code)
+* tag the code
+* make a build

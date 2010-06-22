@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="280dip">
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal">
+		<ImageView android:id="@+id/image_title" android:src="@drawable/cat_all"
+			android:scaleType="fitCenter"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxHeight="50dip" android:maxWidth="50dip" android:minHeight="50dip" android:minWidth="50dip"></ImageView>
+		<LinearLayout android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_weight="1">
+			<TextView android:textAppearance="@style/title_white"
+				android:background="@color/color_blue_light" android:id="@+id/text_title"
+				android:layout_width="fill_parent" android:lines="1"
+				android:maxLines="1" android:ellipsize="marquee" android:inputType="none"
+				android:layout_height="fill_parent" android:layout_weight="1"
+				android:gravity="left|center_vertical" android:paddingLeft="5dip"
+				android:paddingRight="3dip" android:paddingTop="3dip"
+				android:text="@string/qtn_andr_plan_route_tk"></TextView>
+			<LinearLayout android:background="@color/color_blue_dark"
+				android:layout_height="wrap_content" android:layout_width="fill_parent">
+				<TextView android:id="@+id/text_title" android:lines="1"
+					android:maxLines="1" android:inputType="none"
+					android:layout_height="fill_parent" android:paddingLeft="5dip"
+					android:paddingRight="3dip" android:gravity="left|center_vertical"
+					android:text="@string/qtn_andr_start_txt" android:layout_width="wrap_content"
+					android:textAppearance="@style/label_text_white_big"></TextView>
+				<TextView android:id="@+id/TextView01"
+					android:layout_height="fill_parent" android:layout_width="fill_parent"
+					android:gravity="center_vertical" android:text="@string/qtn_andr_my_gps_pos_txt"
+					android:paddingLeft="5dip" android:textAppearance="@style/label_text_white_big"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_height="fill_parent"
+		android:layout_width="fill_parent" android:visibility="visible">
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:id="@+id/layout_btn_search" android:layout_weight="1"
+			android:background="@drawable/background_dialog_button"
+			android:layout_margin="1dip" android:clickable="true" android:focusable="true">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:src="@drawable/cmd_search"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:textAppearance="@style/label_text_black_big_bold"
+				android:text="@string/qtn_andr_search_4_dest_tk" android:gravity="center"></TextView>
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:id="@+id/layout_btn_my_places" android:layout_weight="1"
+			android:background="@drawable/background_dialog_button"
+			android:layout_margin="1dip" android:clickable="true"
+			android:paddingLeft="8dip" android:paddingRight="8dip" android:focusable="true">
+			<ImageView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:src="@drawable/cmd_my_places"></ImageView>
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_gravity="center_horizontal"
+				android:textAppearance="@style/label_text_black_big_bold"
+				android:text="@string/qtn_andr_my_places_tk"
+				android:gravity="center"></TextView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

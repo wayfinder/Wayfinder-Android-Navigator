@@ -1,0 +1,113 @@
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_width="fill_parent">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+		<com.vodafone.android.navigation.view.SettingsTitle
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Server" />
+		<Button android:layout_height="wrap_content"
+			android:background="@drawable/background_button"
+			android:layout_width="fill_parent" android:padding="10dip"
+			android:layout_margin="5dip" android:id="@+id/btn_prod_server"
+			android:text="Production server"></Button>
+		<Button android:layout_height="wrap_content"
+			android:background="@drawable/background_button"
+			android:layout_width="fill_parent" android:padding="10dip"
+			android:layout_margin="5dip" android:id="@+id/btn_test_default_server"
+			android:text="Test server"></Button>
+		<Button android:layout_height="wrap_content"
+			android:background="@drawable/background_button"
+			android:layout_width="fill_parent" android:padding="10dip"
+			android:layout_margin="5dip" android:id="@+id/btn_vf_server_wf_clienttype_server"
+			android:text="Production server DEMO"></Button>
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/background_edit_text"
+			android:layout_width="fill_parent" android:paddingBottom="5dip"
+			android:paddingLeft="10dip" android:paddingRight="5dip"
+			android:paddingTop="5dip" android:hint="Enter server url (No port)"
+			android:layout_margin="5dip" android:id="@+id/text_server_url"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/background_edit_text"
+			android:layout_width="fill_parent" android:paddingBottom="5dip"
+			android:paddingLeft="10dip" android:paddingRight="5dip"
+			android:paddingTop="5dip" android:hint="Enter server port"
+			android:layout_margin="5dip" android:id="@+id/text_server_port"
+			android:inputType="number"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/background_edit_text"
+			android:layout_width="fill_parent" android:paddingBottom="5dip"
+			android:paddingLeft="10dip" android:paddingRight="5dip"
+			android:paddingTop="5dip" android:hint="Enter client-type"
+			android:layout_margin="5dip" android:id="@+id/text_client_type"></EditText>
+		<com.vodafone.android.navigation.view.SettingsTitle
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Skip gps dialog" />
+		<com.vodafone.android.navigation.view.SettingsCheckBox
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="skip 'Waiting for GPS' dialog" android:id="@+id/check_box_always_route" />
+		<com.vodafone.android.navigation.view.SettingsTitle
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Display settings at startup" />
+		<com.vodafone.android.navigation.view.SettingsCheckBox
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Display settings at startup" android:id="@+id/check_box_disp_settings_at_startup" />
+		<com.vodafone.android.navigation.view.SettingsTitle
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Map settings" />
+		<com.vodafone.android.navigation.view.SettingsCheckBox
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Use fixed zoomlevels" android:id="@+id/check_box_fixed_zoom" />
+		<com.vodafone.android.navigation.view.SettingsCheckBox
+			android:layout_height="wrap_content" android:layout_width="fill_parent"
+			android:text="Disable positioning" android:id="@+id/checkbox_disable_positioning" />
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/background_edit_text"
+			android:layout_width="fill_parent" android:paddingBottom="5dip"
+			android:paddingLeft="10dip" android:paddingRight="5dip"
+			android:paddingTop="5dip" android:hint="Enter lat coordinate"
+			android:layout_margin="5dip" android:id="@+id/text_coordinate_lat"
+			android:inputType="number"></EditText>
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/background_edit_text"
+			android:layout_width="fill_parent" android:paddingBottom="5dip"
+			android:paddingLeft="10dip" android:paddingRight="5dip"
+			android:paddingTop="5dip" android:hint="Enter lon coordinate"
+			android:layout_margin="5dip" android:id="@+id/text_coordinate_lon"
+			android:inputType="number"></EditText>
+		<Button android:layout_height="wrap_content"
+			android:background="@drawable/background_button"
+			android:layout_width="fill_parent" android:padding="10dip"
+			android:layout_margin="5dip" android:id="@+id/btn_set_coordinate"
+			android:text="Show coordinate in map"></Button>
+	</LinearLayout>
+</ScrollView>

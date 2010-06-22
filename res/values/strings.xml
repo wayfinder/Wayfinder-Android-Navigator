@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<resources>
+    <string name="qtn_andr_applic_name_txt">Navigation</string>
+    <string name="qtn_andr_settings_tk">Settings</string>
+    <string name="qtn_andr_help_tk">Help</string>
+    <string name="qtn_andr_search_POI_txt">Points of Interest</string>
+    <string name="qtn_andr_city_postcode_txt">City or postcode</string>
+    <string name="qtn_andr_places_tk">Places</string>
+    <string name="qtn_andr_search_tk">Search</string>
+    <string name="qtn_andr_my_position_tk">My location</string>
+    <string name="qtn_andr_select_cat_txt">Select category</string>
+    <string name="qtn_andr_select_country_txt">Select country</string>
+    <string name="qtn_andr_prev_searches_tk">Previous searches</string>
+    <string name="qtn_andr_view_details_txt">View details</string>
+    <string name="qtn_andr_search_for_txt">Searching for</string>
+    <string name="qtn_andr_sel_cat_txt">(select category)</string>
+    <string name="qtn_andr_roaming_off_warning_txt">Roaming is currently turned off. You need to turn on data roaming to use Navigation.</string>
+    <string name="qtn_andr_safety_warning_txt">Safety warning</string>
+    <string name="qtn_andr_no_result_found_txt">No results have been found</string>
+    <string name="qtn_andr_navigate_to_tk">Navigate to</string>
+    <string name="qtn_andr_drive_tk">Drive</string>
+    <string name="qtn_andr_walk_tk">Walk</string>
+    <string name="qtn_andr_navigate_tk">Start driving</string>
+    <string name="qtn_andr_time_left_txt">Time left:</string>
+    <string name="qtn_andr_distance_left_txt">Dist. left:</string>
+    <string name="qtn_andr_route_overv_tk">Route overview</string>
+    <string name="qtn_andr_3D_tk">3D view</string>
+    <string name="qtn_andr_2D_view_tk">2D view</string>
+    <string name="qtn_andr_night_mode_tk">Night mode</string>
+    <string name="qtn_andr_all_categ_txt">All categories</string>
+    <string name="qtn_andr_choose_res_txt">Choose result</string>
+    <string name="qtn_andr_ok_tk">OK</string>
+    <string name="qtn_andr_roaming_warning_mess_txt">You are roaming. Additional charges may apply. Do you want to continue?</string>
+    <string name="qtn_andr_safety_mess_txt">Please do not operate the application or phone while driving and remember that the road traffic regulations have priority over the navigation instructions.</string>
+    <string name="qtn_andr_show_on_map_txt">Show on map</string>
+    <string name="qtn_andr_loading_txt">Loading...</string>
+    <string name="qtn_andr_route_for_txt">Route for %s</string>
+    <string name="qtn_andr_note_txt">Note</string>
+    <string name="qtn_andr_choose_mode_txt">Choose mode</string>
+    <string name="qtn_andr_driving_txt">driving</string>
+    <string name="qtn_andr_walking_txt">walking</string>
+    <string name="qtn_andr_stop_route_tk">Cancel route</string>
+    <string name="qtn_andr_day_mode_tk">Day mode</string>
+    <string name="qtn_andr_dest_reached_txt">Destination reached</string>
+    <string name="qtn_andr_enter_ph_no_txt">Enter phone number</string>
+    <string name="qtn_andr_enter_mess_txt">Enter message</string>
+    <string name="qtn_andr_send_tk">Send</string>
+    <string name="qtn_andr_send_sms_txt">Send SMS</string>
+    <string name="qtn_andr_u_enter_ph_no_txt">You need to enter a phone number</string>
+    <string name="qtn_andr_u_enter_mess_txt">You need to enter a message</string>
+    <string name="qtn_andr_sending_mess_txt">Sending message...</string>
+    <string name="qtn_andr_close_tk">Close</string>
+    <string name="qtn_andr_no_loc_warn_mess_txt">You don't have a valid location yet. Make sure your phone is in an open space so it can receive the GPS signal.</string>
+    <string name="qtn_andr_u_r_offtrack_txt">You are offtrack</string>
+    <string name="qtn_andr_waiting_for_pos_txt">Waiting for position</string>
+    <string name="qtn_andr_weak_gps_signal_txt">The GPS signal is not strong enough. Make sure the device is placed in an open space.</string>
+    <string name="qtn_andr_option_txt">Options</string>
+    <string name="qtn_andr_play_route_txt">Play route</string>
+    <string name="qtn_andr_speed_cam_ahead_txt">Speed camera ahead</string>
+    <string name="qtn_andr_search_incomplete_txt">You need to either enter a name or choose a category</string>
+    <string name="qtn_andr_gen_settings_tk">General settings</string>
+    <string name="qtn_andr_route_settings_tk">Route settings</string>
+    <string name="qtn_andr_map_settings_tk">Map settings</string>
+    <string name="qtn_andr_account_tk">Account</string>
+    <string name="qtn_andr_upgrade_tk">Upgrade</string>
+    <string name="qtn_andr_set_gps_txt">You need to turn on the GPS settings to use Vodafone Navigation.</string>
+    <string name="qtn_andr_yes_tk">Yes</string>
+    <string name="qtn_andr_no_tk">No</string>
+    <string name="qtn_andr_map_pos_txt">Add info</string>
+    <string name="qtn_andr_stop_route_confirm_txt">Are you sure you want to cancel the route?</string>
+    <string name="qtn_andr_dist_units_txt">Distance units</string>
+    <string name="qtn_andr_metric_rb_txt">Metric</string>
+    <string name="qtn_andr_miles_yards_rb_txt">Miles, yards</string>
+    <string name="qtn_andr_miles_feet_rb_txt">Miles, feet</string>
+    <string name="qtn_andr_backlight_txt">Backlight</string>
+    <string name="qtn_andr_normal_rb_txt">Normal</string>
+    <string name="qtn_andr_only_on_route_rb_txt">Only on route</string>
+    <string name="qtn_andr_always_on_rb_txt">Always on</string>
+    <string name="qtn_andr_route_optim_txt">Route optimisation</string>
+    <string name="qtn_andr_fastest_route_rb_txt">Fastest route</string>
+    <string name="qtn_andr_shortest_route_rb_txt">Shortest route</string>
+    <string name="qtn_andr_voice_guidance_txt">Voice guidance</string>
+    <string name="qtn_andr_voice_prompts_cb_txt">Voice guidance</string>
+    <string name="qtn_andr_route_options_txt">Route options</string>
+    <string name="qtn_andr_use_toll_roads_cb_txt">Use toll roads</string>
+    <string name="qtn_andr_use_motorway_cb_txt">Use motorway</string>
+    <string name="qtn_andr_clear_tk">Clear</string>
+    <string name="qtn_andr_edit_save_tk">Save</string>
+    <string name="qtn_andr_edit_cancel_tk">Cancel</string>
+    <string name="qtn_andr_edit_place_det_txt">Edit place</string>
+    <string name="qtn_andr_add_to_m_places_tk">Save place</string>
+    <string name="qtn_andr_mng_my_places_txt">Manage my places</string>
+    <string name="qtn_andr_manage_tk">Manage</string>
+    <string name="qtn_andr_unselect_all_tk">Unselect all</string>
+    <string name="qtn_andr_select_all_tk">Select all</string>
+    <string name="qtn_andr_my_places_txt">My places</string>
+    <string name="qtn_andr_remove_tk">Remove</string>
+    <string name="qtn_andr_search_result_txt">Search result</string>
+    <string name="qtn_andr_edit_name_txt">Name</string>
+    <string name="qtn_andr_edit_descr_txt">Description:</string>
+    <string name="qtn_andr_u_r_close_txt">You are close to %s</string>
+    <string name="qtn_andr_dont_show_cb_txt">Don't show this again</string>
+    <string name="qtn_andr_u_r_close_dist_txt">You are close to %s (%s)</string>
+    <string name="qtn_andr_recent_dest_tk">Recent destinations</string>
+    <string name="qtn_andr_recent_dest_txt">Recent destinations</string>
+    <string name="qtn_andr_insert_sim_txt">You need to enter a SIM card and turn on your internet connection to use Vodafone Navigation.</string>
+    <string name="qtn_andr_no_saved_places_txt">No saved places</string>
+    <string name="qtn_andr_no_recent_dest_txt">No recent destinations</string>
+    <string name="qtn_andr_no_prev_searches_txt">No previous searches</string>
+    <string name="qtn_andr_set_conn_txt">Make sure your internet connection settings are turned on. For further help, contact Vodafone Customer Services or visit www.vodafone.com/maps.</string>
+    <string name="qtn_andr_help_main_menu_txt">You can find your destination by making a search, using one of your saved places or by selecting a place on the map. Your position is automatically indicated by an icon.\n\nYou can pan, zoom in/out or tap the area on the map you want to navigate to. Zoom in and out of the map by pressing + and -. \n\nBy tapping the screen you place a red pin on the map. Tap the red pin and select if you want to navigate to the selected position on the map, or to save the position as a favourite place. \n\nYou can  access the search view  by clicking the Menu key  and select \"Search\", or by tapping the \"Tap to find destination\" field at the bottom of the screen. \n\nYou can plan a route by either clicking the Menu key and select \"Navigate\", by selecting a saved place or by tapping the map and selecting \"Navigate to\". \n\nIf you are not receiving a GPS signal, make sure your phone is in an open space with a clear line of sight to the sky.</string>
+    <string name="qtn_andr_help_navmap_title">Navigation view</string>
+    <string name="qtn_andr_help_navmap_txt">Once you are driving, the Navigation view guides you turn-by-turn by voice instructions and displays your route on the map, either in 3D or in 2D. Your route is displayed as a coloured line on the map, with your position indicated by an icon. \n\nThe larger icon at the top of the screen shows the next event or turn in your route. Here you can also see the next street name. The current street name is displayed at the bottom of the screen.</string>
+    <string name="qtn_andr_widget_1_title">Add Navigation widget to homescreen</string>
+    <string name="qtn_andr_widget_1_txt">You can add a widget to the homescreen which gives you instant text information on where you are. Press and hold on an empty space on the homescreen. Browse to the Android widget section and select  \"Navigation\". \n\nClick on the refresh icon in the widget's top right corner to get your current position. Click on the widget to access the Navigation application. When a route is active, click on the square in the top right corner to cancel the route or on the icon to return to navigation view.</string>
+    <string name="qtn_andr_widget_2_title">Add My Places folder to homescreen</string>
+    <string name="qtn_andr_widget_2_txt">You can add an Android live folder to the homescreen which gives you instant access to your saved favourite places. Press and hold on an empty space on the homescreen. Select \"Folder\" > \"Live folder\" > \"My places\". \n\nClick on the \"My places\" folder to have instant access to all your saved places. Select one in order to navigate to it.</string>
+    <string name="qtn_andr_help_search_title">Search</string>
+    <string name="qtn_andr_help_search_txt">You can find addresses, companies, people*, phone numbers* and places by making a search. To make a search you either tap the \"Tap to find destination\" field at the start screen or press the Menu key, select \"Search\" and enter what you are looking for. If you want to find something/someone in the nearby area (within %s) check the \"Search around me\" checkbox. \n\nYou can also make a search by selecting  a category, i.e. airport, ATM, hotel or restaurant. \n\nOr, you can search by entering what you are looking for and selecting a category.\n\nTo set another place or area to search in, uncheck the \"Search around me\" checkbox. \n\nPerform the search by clicking the magnifying icon to the right.\n\n* Not available in all countries and regions.</string>
+    <string name="qtn_andr_help_results_title">Search results</string>
+    <string name="qtn_andr_help_results_1_txt">Your search results will be displayed on the map, as well as in a scrollable list. They are listed by relevance if you have done a defined search, and by distance if you have searched around you. \n\nYou will see the map centred on your top search hits. If you tap a placemark in the list, the map will move to and centre on that placemark.\n\nYou can resize the list by pressing the \"handle\" at the upper right corner of the list.</string>
+    <string name="qtn_andr_help_results_2_txt">Once you have found what you are looking for, tap the result, in the list or on the map, and select if you want to navigate to it, add it to \"My places\" (your favourite places) or view the place's details.</string>
+    <string name="qtn_andr_help_my_places_title">My places</string>
+    <string name="qtn_andr_help_my_places_1_txt">Search for a favourite location. Tap the result you were looking for and it becomes highlighted. Tap once again to access \"Save place\". Add this place, edit the details and save it. You can also save a place directly in the map, by tapping the pin and pressing \"Save place\".</string>
+    <string name="qtn_andr_help_my_places_2_txt">Your saved favourite places can be either saved search results or locations saved from the map. You can use your saved places to navigate to it, or show it on map.</string>
+    <string name="qtn_andr_help_map_title">Map</string>
+    <string name="qtn_andr_help_map_txt">In the Map view certain places (eg petrol stations and train stations) are displayed as icons. \n\nYour position is indicated by an icon when you are receiving GPS signal. If you do not have a GPS signal, a circle in the map will indicate your approximate position.\n\nYou can zoom in and out of the map by pressing + and -.</string>
+    <string name="qtn_andr_help_set_title">Settings</string>
+    <string name="qtn_andr_help_set_txt">In Settings you can personalise the application according to your own preferences.\n\nGeneral settings contain settings for the application, for example which distance unit you want to use.\n\nRoute settings contain settings that for example allow you to select if you want to optimise your route calculation to the fastest or shortest route available.</string>
+    <string name="qtn_andr_find_around_me_txt">Find around me</string>
+    <string name="qtn_andr_too_long_route_txt">Route is too long for %s.</string>
+    <string name="qtn_andr_route_cant_b_calc_2_req_pos_txt">Unable to calculate route to your destination. Choose a different destination. </string>
+    <string name="qtn_andr_route_cant_b_calc_from_ur_pos_txt">Unable to calculate route from your current position.</string>
+    <string name="qtn_andr_country_name_txt">Country name</string>
+    <string name="qtn_andr_km_txt">km</string>
+    <string name="qtn_andr_metre_txt">m</string>
+    <string name="qtn_andr_miles_txt">miles</string>
+    <string name="qtn_andr_miles_abbrev_txt">mi</string>
+    <string name="qtn_andr_feet_txt">feet</string>
+    <string name="qtn_andr_yards_txt">yards</string>
+    <string name="qtn_andr_feet_abbrev_txt">ft</string>
+    <string name="qtn_andr_yards_abbrev_txt">yds</string>
+    <string name="qtn_andr_decimal_marker_txt">.</string>
+    <string name="qtn_andr_hours_txt">h</string>
+    <string name="qtn_andr_minutes_txt">m</string>
+    <string name="qtn_andr_seconds_txt">s</string>
+    <string name="qtn_andr_miles_per_hour_txt">mph</string>
+    <string name="qtn_andr_km_per_hour_txt">km/h</string>
+    <string name="qtn_andr_help_getting_started_txt">Getting started</string>
+    <string name="qtn_andr_help_welcome_txt">Welcome to Vodafone Navigation which will let you find locations and navigate to a destination.</string>
+    <string name="qtn_andr_placemark_is_saved_txt">The place has been saved</string>
+    <string name="qtn_andr_search_within_5km_txt">Search results will be near to your current position.</string>
+    <string name="qtn_andr_search_far_away_txt">Search results will be within the city or country you entered.</string>
+    <string name="qtn_andr_tap_2_enter_search_txt">Tap to find destination</string>
+    <string name="qtn_andr_no_categories_txt">No categories</string>
+    <string name="qtn_andr_no_categories_tk">No categories</string>
+    <string name="qtn_wayfinder_about_extra_msg">© 2002-2010 Vodafone Group Services Limited \n\nData Sources:\n\n© 2010 Tele Atlas B.V, Sensis, CE Info Systems Pvt. Ltd, DMapas, Foreca, Mimer Information Technology AB.\n\nThe map uses data from geonames.org. This data is licensed under a CreativeCommons Attribution 3.0 License - for more information, refer to http://creativecommons.org/licenses/by/3.0/.</string>
+    <string name="qtn_andr_about_tk">About</string>
+    <string name="qtn_andr_visible_pois_whl_navigating_txt">Places visible when navigating</string>
+    <string name="qtn_andr_correct_conn_settings_txt">Make sure your connection settings are correct. For further help, contact Vodafone Customer Services or visit www.vodafone.com/maps</string>
+    <string name="qtn_andr_mng_my_rec_dest_txt">Manage recent destinations</string>
+    <string name="qtn_andr_change_r_saved_txt">The change has been saved</string>
+    <string name="qtn_andr_plan_route_tk">Navigate</string>
+    <string name="qtn_andr_search_4_dest_tk">Search for destination</string>
+    <string name="qtn_andr_my_places_tk">My Places</string>
+    <string name="qtn_andr_start_txt">Start:</string>
+    <string name="qtn_andr_my_gps_pos_txt">My GPS position</string>
+    <string name="qtn_andr_mess_closes_in_x_sec_txt">Message closes in %s seconds.</string>
+    <string name="qtn_andr_search_around_me_txt">Search around me (within %s)</string>
+    <string name="qtn_andr_exit_nav_title">Exit Navigation</string>
+    <string name="qtn_andr_exit_nav_txt">Continue to phone homescreen?</string>
+    <string name="qtn_andr_return_drive_tk">Return to driving</string>
+    <string name="qtn_andr_place_is_edited_txt">The place has been edited</string>
+    <string name="qtn_andr_details_txt">Details</string>
+    <string name="qtn_andr_synchronise_tk">Synchronise</string>
+    <string name="qtn_andr_saved_places_r_syncd_txt">Your saved places are being synchronised.</string>
+    <string name="qtn_andr_sync_completed_txt">Synchronisation completed.</string>
+    <string name="qtn_andr_error_try_again_txt">We're sorry, an error has occurred. Please try again.</string>
+    <string name="qtn_andr_no_number_2_call_txt">No number to call</string>
+    <string name="qtn_andr_phone_number_title">Call</string>
+    <string name="qtn_andr_phone_number_txt">Tap number to call</string>
+    <string name="qtn_andr_phone_type_phone_txt">Phone:</string>
+    <string name="qtn_andr_phone_type_mobile_txt">Mobile:</string>
+    <string name="qtn_andr_premium">\?andr_premium</string>
+    <string name="qtn_andr_other_results">\?andr_other_results</string>
+    <string name="qtn_andr_turn_off_wifi_txt">To use Vodafone Navigation you need to turn off the Wi-Fi connection and instead enable the mobile data connection.</string>
+    <string name="qtn_andr_rerouting_failes_retry_qtxt">Rerouting failed. \n\nDo you want to retry?</string>
+    <string name="qtn_andr_time_until_retry_txt">Time until retry %s</string>
+    <string name="qtn_andr_update_app_2_version_txt">Upgrade app to version %s</string>
+    <string name="qtn_andr_new_version_available_txt">A new version of this application is available for download.</string>
+</resources>

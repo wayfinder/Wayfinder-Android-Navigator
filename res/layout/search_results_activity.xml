@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (c) 1999-2010, Vodafone Group Services
+  All rights reserved.
+  
+  Redistribution and use in source and binary forms, with or without 
+  modification, are permitted provided that the following conditions 
+  are met:
+  
+      * Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer.
+      * Redistributions in binary form must reproduce the above 
+        copyright notice, this list of conditions and the following 
+        disclaimer in the documentation and/or other materials provided 
+        with the distribution.
+      * Neither the name of Vodafone Group Services nor the names of its 
+        contributors may be used to endorse or promote products derived 
+        from this software without specific prior written permission.
+  
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+  AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+  IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+  ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE 
+  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+  CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+  SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+  INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
+  IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
+  OF SUCH DAMAGE.
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.vodafone.android.navigation.view.WayfinderMapView
+		android:id="@+id/map" android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	</com.vodafone.android.navigation.view.WayfinderMapView>
+	<LinearLayout android:layout_width="fill_parent"
+		android:id="@+id/content" android:layout_gravity="bottom"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<LinearLayout android:layout_width="fill_parent"
+			android:orientation="horizontal" android:layout_height="wrap_content" android:id="@+id/layout_top">
+			<ImageView android:layout_width="fill_parent"
+				android:paddingLeft="10dip" android:paddingBottom="1dip"
+				android:paddingTop="1dip" android:layout_height="wrap_content"
+				android:layout_weight="1" android:layout_gravity="bottom"
+				android:background="@drawable/result_list_top" android:id="@+id/img_search_result_list_top"></ImageView>
+			<com.vodafone.android.navigation.view.ResizeHandleImageButton
+				android:id="@+id/handle" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:src="@drawable/handle_normal_up"
+				android:paddingTop="15dip" android:background="@null"
+				android:layout_gravity="bottom|right"></com.vodafone.android.navigation.view.ResizeHandleImageButton>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
+			android:id="@+id/layout_list_content" android:layout_height="fill_parent">
+			<TextView android:layout_width="fill_parent"
+				android:paddingLeft="10dip" android:paddingBottom="1dip"
+				android:layout_height="wrap_content" android:lines="1"
+				android:textStyle="bold"
+				android:id="@+id/activity_title" android:layout_gravity="bottom"
+				android:background="@color/color_white" android:text="@string/qtn_andr_search_result_txt" android:textColor="@color/color_blue_dark"></TextView>
+			<com.vodafone.android.navigation.view.SearchResultListView
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:id="@+id/listview_search_results" android:clickable="true"
+				android:background="@color/color_white" android:cacheColorHint="#FFFFFFFF"
+				android:dividerHeight="1dip" android:divider="@color/color_gray_seperator"
+				android:layout_weight="1">
+			</com.vodafone.android.navigation.view.SearchResultListView>
+		</LinearLayout>
+	</LinearLayout>
+</FrameLayout>
