@@ -152,7 +152,7 @@ public class NavigatorApplication extends Application implements
 
 	static {
 		CLIENT_ID = "wf-android-demo";
-		SERVER_URL = "[MY SERVER]";
+		SERVER_URL = "oss-xml.services.wayfinder.com";
 		SERVER_PORT = 80;
 	}
 
